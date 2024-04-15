@@ -1,0 +1,42 @@
+{
+  "name": "node-hello-world",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "node src/server.js",
+    "test:dev": "jest --coverage"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "testResultsProcessor": "jest-sonar-reporter"
+  },
+  "jestSonar": {
+    "reportPath": "coverage",
+    "reportFile": "test-reporter.xml",
+    "indent": 2
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giannakopoulosj/node-hello-world.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giannakopoulosj/node-hello-world/issues"
+  },
+  "homepage": "https://github.com/giannakopoulosj/node-hello-world#readme",
+  "dependencies": {
+    "@types/jest": "^29.5.12",
+    "express": "^4.19.2",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4"
+  },
+  "devDependencies": {
+    "jest-sonar-reporter": "^2.0.0"
+  }
+}
